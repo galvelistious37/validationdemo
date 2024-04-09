@@ -36,6 +36,8 @@ public class CustomerController {
 
         System.out.println("Last name: >" +theCustomer.getLastName()+ "<");
 
+        System.out.println("Binding results: " + theBindingResult.toString());
+
         return theBindingResult.hasErrors() ?
                 "customer-form" : "customer-confirmation";
     }
